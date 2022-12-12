@@ -1,14 +1,21 @@
 package com.devsuperior.myfirstproject.entities;
 
+import jakarta.persistence.*;
+
 import java.io.Serializable;
 
+@Entity
 public class Product implements Serializable {
     private static final Long SerializableUID = 1L;
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private Double price;
 
+    @ManyToOne
+    @JoinColumn (name = "category_id")
     private Category category;
 
     public Product(){

@@ -21,7 +21,7 @@ public class CategoryResource {
 
     @GetMapping
     public ResponseEntity<List<Category>> findAll() {
-		List<Category> list = categoryRepository.findAll();
+        List<Category> list = categoryRepository.findAll();
         return ResponseEntity.ok().body(list);
     }
 
@@ -30,7 +30,7 @@ public class CategoryResource {
 
     findById(@PathVariable Long id) {
 
-        return ResponseEntity.ok().body(categoryRepository.findById(id));
+        return ResponseEntity.ok().body(categoryRepository.findById(id).get());
     }
 }
 
