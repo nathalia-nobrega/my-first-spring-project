@@ -1,4 +1,4 @@
-package com.devsuperior.myfirstproject.entities.entities;
+package com.devsuperior.myfirstproject.entities;
 
 import java.io.Serializable;
 

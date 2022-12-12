@@ -1,6 +1,6 @@
 package com.devsuperior.myfirstproject.repositories;
 
-import com.devsuperior.myfirstproject.entities.entities.Category;
+import com.devsuperior.myfirstproject.entities.Category;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;

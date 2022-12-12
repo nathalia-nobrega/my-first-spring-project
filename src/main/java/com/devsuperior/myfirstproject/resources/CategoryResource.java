@@ -1,6 +1,6 @@
-package com.devsuperior.myfirstproject.entities.resources;
+package com.devsuperior.myfirstproject.resources;
 
-import com.devsuperior.myfirstproject.entities.entities.Category;
+import com.devsuperior.myfirstproject.entities.Category;
 import com.devsuperior.myfirstproject.repositories.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
